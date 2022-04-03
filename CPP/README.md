@@ -32,16 +32,16 @@ C:\Windows\User\Downloads> cd Calculator(Text-Based)
 ```
 
 # How to run on Linux:
-(1): Open the folder in your file explorer.
+(1): Open the folder in your file explorer. (You already have G++ and GCC installed by default!)
 (2): Right-click in the empty space in the folder and select `Open in Terminal`
 
 Type the following:
 ``` shellscript
-User@Computer:~$ g++ Main.cpp -lm
+User@Computer:/Downloads/Calulcator$ g++ Main.cpp -lm
 ```
 If you don't use (-lm) there will be a linking error while compiling. Only some files use this but yea, I hope you understand.
 Then, a `a.out` file will be generated. Please follow the following step to execute that file:
 
 ```shellscript
-User@Computer:~$ ./a.out
+User@Computer:/Downloads/Calculator$ ./a.out
 ```
