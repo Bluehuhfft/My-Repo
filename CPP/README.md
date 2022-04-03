@@ -1,20 +1,47 @@
 # Welcome Stranger!
+Please make sure that you have installed GCC and G++ to run these files! To check, if you have them installed:
+``` shellscript
+C:\Windows\User> gcc --version
+C:\Windows\User> g++ --version
+```
+If it shows up: (Or something similar)
+``` shellscript
+C:\Windows\User> gcc --version
+Error: 'gcc' is not recognized as an external or bash command.
 
-# How to run on Windows(Very Easy):
-1. Extract the archive
-2. Open the folder 'Executables'
-3. Double-click on 'ForWindows.exe'
+C:\Windows\User> g++ --version
+Error: 'g++' is not recognized as an external or bash command.
+```
+You have to install GCC and G++. I recommend `MinGW`
+Its actually quite complicated so click [here](https://www.youtube.com/watch?v=jvg4VtYEhKU). But this video also shows how to setup VSCode with c++ and c, but honestly
+you don't need that. For other C++ files, you can use the same commands which are listed below:
 
-# How to run on Linux(Very Easy):
-1. Extract the archive
-2. Open the folder 'Executables'
-3. Right-click anywhere in the empty space and click 'Open in terminal'
-4. Type './ForLinux.out'. Enter the password if prompted
 
-# Terms & Conditions:
-1. You run this program at your own risk, I have not designed this with any bad intentions but it is better to be safe than sorry.
-2. All my projects are open-source meaning that you can take a look yourself at the source code, please do so before running.
-3. Make modifications at your own risk :) And also, have fun!
+# How to run on Windows:
+```shellscript
+C:\Windows\User> cd Downloads
+C:\Windows\User\Downloads> cd Folder
+C:\Windows\User\Downloads\Folder> g++ Main.cpp -o Main.exe -lm
+```
+If you don't use (-lm) there will be a linking error while compiling.
+I'm assuming that your selected destination for the folder was 'Downloads'.
+Please replace 'Folder' with the name of the folder you were given. Eg.
 
-# Important (Please Read):
-The source code of the '.c' files are already pre-compiled in a folder named 'Executables'. If you wish to make modifications, you will need to recompile the source code. Also, if you get an error while compiling, use '-lm' at the end of the command. EG. "g++ Main.cpp -o Main.exe -lm". If the error does not resolve, you have done the mistake.
+```shellscript
+C:\Windows\User\Downloads> cd Calculator(Text-Based)
+```
+
+# How to run on Linux:
+(1): Open the folder in your file explorer.
+(2): Right-click in the empty space in the folder and select `Open in Terminal`
+
+Type the following:
+``` shellscript
+User@Computer:~$ g++ Main.cpp -lm
+```
+If you don't use (-lm) there will be a linking error while compiling. Only some files use this but yea, I hope you understand.
+Then, a `a.out` file will be generated. Please follow the following step to execute that file:
+
+```shellscript
+User@Computer:~$ ./a.out
+```
